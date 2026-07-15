@@ -3,74 +3,149 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Swingers App Store Support</title>
+    <meta name="description" content="MAX BIDDING LLC builds focused mobile software and publishes Swingers for iPhone." />
+    <title>MAX BIDDING LLC | Mobile Software and Games</title>
     <style>
       :root {
         color-scheme: dark;
-        background: #12090b;
-        color: #fff2bd;
+        background: #090b10;
+        color: #fff8df;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
         min-height: 100vh;
-        background:
-          radial-gradient(circle at 50% 0%, rgba(255, 227, 106, 0.22), transparent 34%),
-          linear-gradient(180deg, #351814, #12090b 46%, #05080e);
+        background: #090b10;
       }
-      main {
-        width: min(720px, calc(100% - 36px));
+      header, main, footer {
+        width: min(960px, calc(100% - 36px));
         margin: 0 auto;
-        padding: max(28px, env(safe-area-inset-top)) 0 max(34px, env(safe-area-inset-bottom));
       }
-      img {
-        display: block;
-        width: min(520px, 100%);
-        margin: 0 auto 18px;
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-height: 76px;
+        padding-top: env(safe-area-inset-top);
+        border-bottom: 1px solid #3a3d45;
+      }
+      .wordmark {
+        color: #ffe36a;
+        font-size: 1rem;
+        font-weight: 900;
+        text-decoration: none;
+      }
+      header nav { display: flex; gap: 18px; }
+      header nav a, footer a {
+        color: #b9f4da;
+        font-weight: 750;
+        text-decoration: none;
+      }
+      main { padding: 72px 0 76px; }
+      .intro { max-width: 760px; padding-bottom: 64px; }
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #ff9b6b;
+        font-size: 0.82rem;
+        font-weight: 900;
+        text-transform: uppercase;
       }
       h1 {
-        margin: 0 0 12px;
+        margin: 0;
         color: #ffe36a;
-        font-size: clamp(2rem, 10vw, 4.6rem);
-        line-height: 0.92;
-        text-shadow: 0 4px 0 rgba(25, 8, 6, 0.75);
+        font-size: clamp(2.7rem, 9vw, 6.3rem);
+        line-height: 0.94;
       }
-      p {
-        color: #f3d3b4;
-        font-size: 1.05rem;
-        line-height: 1.55;
+      h2 { margin: 0 0 18px; color: #fff8df; font-size: 1.7rem; }
+      p { color: #d5d7df; font-size: 1.05rem; line-height: 1.65; }
+      .lead { max-width: 690px; margin: 24px 0 0; font-size: 1.24rem; }
+      section {
+        padding: 40px 0;
+        border-top: 1px solid #3a3d45;
       }
-      nav {
+      .product {
+        display: grid;
+        grid-template-columns: minmax(180px, 300px) 1fr;
+        align-items: center;
+        gap: 44px;
+      }
+      .product img { display: block; width: 100%; height: auto; }
+      .links {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-        margin-top: 26px;
+        margin-top: 24px;
       }
-      a {
+      .button {
         display: inline-flex;
         align-items: center;
         min-height: 48px;
         padding: 0 18px;
-        border: 2px solid rgba(25, 8, 6, 0.9);
-        border-radius: 8px;
-        background: linear-gradient(180deg, #ffe66e, #ff8a45);
-        box-shadow: 0 6px 0 rgba(68, 18, 11, 0.9);
-        color: #210605;
-        font-weight: 1000;
+        border: 2px solid #50231e;
+        border-radius: 6px;
+        background: #ffe36a;
+        box-shadow: 0 5px 0 #50231e;
+        color: #210d09;
+        font-weight: 900;
         text-decoration: none;
+      }
+      .button.secondary { border-color: #264d43; background: #b9f4da; box-shadow-color: #264d43; }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 28px 0 max(36px, env(safe-area-inset-bottom));
+        border-top: 1px solid #3a3d45;
+        color: #aeb1ba;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 640px) {
+        header { align-items: flex-start; flex-direction: column; justify-content: center; padding-bottom: 18px; }
+        main { padding-top: 48px; }
+        .product { grid-template-columns: 1fr; gap: 26px; }
+        .product img { width: min(300px, 100%); }
+        footer { flex-direction: column; }
       }
     </style>
   </head>
   <body>
-    <main>
-      <img src="./swingers.png" alt="Swingers logo" />
-      <h1>Swingers</h1>
-      <p>Swingers is an offline-first iPhone arcade game about swinging through an endless city, hitting speed rings, smashing buildings, and chasing your all-time high score.</p>
-      <p>This site exists for App Store support, privacy, and review context.</p>
-      <nav aria-label="Support pages">
-        <a href="./privacy.html">Privacy Policy</a>
+    <header>
+      <a class="wordmark" href="./">MAX BIDDING LLC</a>
+      <nav aria-label="Primary navigation">
+        <a href="#products">Products</a>
         <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
       </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <p class="eyebrow">Independent software company</p>
+        <h1>MAX BIDDING LLC</h1>
+        <p class="lead">We build focused mobile software and games designed to be immediate, replayable, and respectful of the people using them.</p>
+      </div>
+      <section id="products" class="product">
+        <img src="./swingers.png" alt="Swingers game logo" />
+        <div>
+          <p class="eyebrow">Mobile game for iPhone</p>
+          <h2>Swingers</h2>
+          <p>Swingers is an offline-first arcade game about swinging through an endless city, hitting speed rings, smashing buildings, and chasing your all-time high score.</p>
+          <div class="links">
+            <a class="button" href="./support.html">Game Support</a>
+            <a class="button secondary" href="./privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p class="eyebrow">Company information</p>
+        <h2>Publisher and operator</h2>
+        <p>MAX BIDDING LLC develops, publishes, and supports Swingers. Product support and privacy requests are handled through the official links on this domain.</p>
+      </section>
     </main>
+    <footer>
+      <span>&copy; 2026 MAX BIDDING LLC. All rights reserved.</span>
+      <span><a href="./support.html">Support</a> &nbsp; <a href="./privacy.html">Privacy</a></span>
+    </footer>
   </body>
 </html>

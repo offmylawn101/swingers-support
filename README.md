@@ -1,9 +1,12 @@
-# Swingers Support
+# MAX BIDDING LLC
 
-Public support and privacy pages for the Swingers iOS game.
+Public organization, product, support, privacy, and advertising-verification
+pages for MAX BIDDING LLC and the Swingers iOS game.
 
-- [Support](https://offmylawn101.github.io/swingers-support/support.html)
-- [Privacy Policy](https://offmylawn101.github.io/swingers-support/privacy.html)
+- [Organization Website](https://maxbid.biz/)
+- [Support](https://maxbid.biz/support.html)
+- [Privacy Policy](https://maxbid.biz/privacy.html)
+- [AdMob app-ads.txt](https://maxbid.biz/app-ads.txt)
 - [Request Support](https://github.com/offmylawn101/swingers-support/issues/new/choose)
 
 Do not include private account information in public issues.
